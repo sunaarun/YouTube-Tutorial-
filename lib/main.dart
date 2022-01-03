@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_tutorial/builtIn_animation/animated_container.dart';
+import 'package:youtube_tutorial/builtIn_animation/fade_transition.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: //MyHomePage()
+      //MyFadeTransition() // TODO : uncomment this to call FadeTransition example
+      MyAnimatedContainer() //TODO : uncomment this  to call AnimatedContainer example
     );
   }
 }
