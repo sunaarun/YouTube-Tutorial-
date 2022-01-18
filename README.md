@@ -1,6 +1,12 @@
 # youtube_tutorial
 
-A new Flutter project.
+This repository is made for **YouTube** Tutorial.
+You can subscribe to my channel, so you get notification every time I release a new video.
+My channel : https://www.youtube.com/channel/UCaggWJUIN9yFTdMgEiMF_Pg
+
+#AnimatedContainer and FadeTransition episode : https://youtu.be/E8scinMJz4g
+
+
 
 ## Getting Started
 
