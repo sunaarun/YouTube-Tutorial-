@@ -13,10 +13,9 @@ class _MyAnimatedContainerState extends State<MyAnimatedContainer> {
   bool isClicked = false;
   Color color = Colors.red;
   List<Color> list = [
-    Colors.black, Colors.brown,
+    Colors.black, Colors.brown,Colors.teal,
     Colors.green, Colors.blue, Colors.pink,
     Colors.purple,Colors.orange, Colors.amber,
-    Colors.teal
   ];
   var random = Random();
   @override
@@ -31,7 +30,8 @@ class _MyAnimatedContainerState extends State<MyAnimatedContainer> {
                 color =  list[random.nextInt(list.length)];
               });
             },
-            child: AnimatedContainer(duration: Duration(seconds: 2),
+            child: AnimatedContainer(
+              duration: Duration(seconds: 2),
               curve: Curves.easeInCubic,
               alignment :isClicked?  Alignment.center : AlignmentDirectional.topCenter,
               width: isClicked?150:300,

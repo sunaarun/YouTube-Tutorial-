@@ -1,6 +1,9 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:youtube_tutorial/builtIn_animation/animated_container.dart';
 import 'package:youtube_tutorial/builtIn_animation/fade_transition.dart';
+import 'package:youtube_tutorial/widgets/pageview_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,14 +20,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: //MyHomePage()
+      home: MyPageView()
+      //MyHomePage()
       //MyFadeTransition() // TODO : uncomment this to call FadeTransition example
-      MyAnimatedContainer() //TODO : uncomment this  to call AnimatedContainer example
+     // MyAnimatedContainer() //TODO : uncomment this  to call AnimatedContainer example
     );
   }
 }
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
