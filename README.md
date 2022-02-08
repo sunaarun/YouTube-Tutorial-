@@ -6,6 +6,8 @@ My channel : https://www.youtube.com/channel/UCaggWJUIN9yFTdMgEiMF_Pg
 
 #AnimatedContainer and FadeTransition episode : https://youtu.be/E8scinMJz4g
 
+#PageView in Flutter episode : https://youtu.be/_zewttTRgMY
+
 
 
 ## Getting Started
