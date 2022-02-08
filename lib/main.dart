@@ -1,8 +1,11 @@
 import 'dart:math';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:youtube_tutorial/builtIn_animation/animated_container.dart';
 import 'package:youtube_tutorial/builtIn_animation/fade_transition.dart';
+import 'package:youtube_tutorial/my_flutter_app_icons.dart';
+import 'package:youtube_tutorial/splashScreenExample/splash_screen.dart';
 import 'package:youtube_tutorial/widgets/pageview_widget.dart';
 
 void main() {
@@ -20,10 +23,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyPageView()
-      //MyHomePage()
-      //MyFadeTransition() // TODO : uncomment this to call FadeTransition example
-     // MyAnimatedContainer() //TODO : uncomment this  to call AnimatedContainer example
+      home: SplashScreen() // Splash Screen Example
+
     );
   }
 }
@@ -35,7 +36,11 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Youtube Tutorial "),),
       body: Center(
-        child: Text("Welcome to YouTube Tutorial"),
+        child: Column(
+          children: [
+            Icon(MyFlutterApp.videocam)
+          ],
+        ),
       ),
     );
   }
